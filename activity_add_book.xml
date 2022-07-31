@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shruti.bookapp.AddBook"
+    >
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_bno"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_title"
+        android:hint="Title"
+        android:layout_below="@+id/txt_bno"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txt_bno"
+         />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_author"
+        android:hint="Author"
+        android:layout_below="@+id/txt_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txt_title"
+         />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_publisher"
+        android:hint="Publisher"
+        android:layout_below="@+id/txt_author"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txt_author"
+       />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_desc"
+        android:hint="Description"
+        android:layout_below="@+id/txt_publisher"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txt_publisher"
+        android:layout_gravity="center"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sell"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/txt_desc"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Enter selling price"
+        android:id="@+id/txt_sp"
+        android:layout_alignTop="@+id/checkBox"
+        android:layout_alignEnd="@+id/txt_desc"
+        android:layout_toEndOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rent"
+        android:id="@+id/checkBox2"
+        android:layout_below="@+id/txt_sp"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Enter rent price"
+        android:id="@+id/txt_rp"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignEnd="@+id/txt_sp"
+        android:layout_toEndOf="@+id/checkBox2" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:id="@+id/button17"
+        android:layout_below="@+id/spinner2"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

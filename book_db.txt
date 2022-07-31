@@ -1,0 +1,24 @@
+create database book_db;
+
+use book_db;
+
+
+
+
+create table login(userid varchar(100) ,password varchar(50));
+
+create table user(name varchar(100),emailid varchar(100),mobile varchar(10));
+
+create table books(bno varchar(50), title varchar(500),author varchar(500),publisher varchar(500),description varchar(200),sp int,rp int,type varchar(20),userid varchar(100),status varchar(20));
+
+create table orders(orderno varchar(50),orderdate date, address varchar(500),grand_total int,payment_mode varchar(20),userid varchar(100));
+
+create table orders_books(orderno varchar(50), bno varchar(20),price int);
+
+create table ebooks(eno varchar(50), name varchar(50), userid varchar(100),book longblob);
+
+
+
+
+
+

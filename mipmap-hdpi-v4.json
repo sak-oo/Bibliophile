@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Student_project_2018-2019\\Android_Projects\\BooksontheGo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "D:\\Student_project_2018-2019\\Android_Projects\\BooksontheGo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\BooksontheGo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "D:\\BooksontheGo\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    }
+]

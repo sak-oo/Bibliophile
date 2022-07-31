@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shruti.bookapp.EditBook"
+    android:background="#050000">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_bno"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_title"
+        android:hint="Title"
+        android:layout_below="@+id/txt_bno"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txt_bno"
+        android:textColor="#ffffff"
+        android:textColorHint="#9e9e9e" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_author"
+        android:hint="Author"
+        android:layout_below="@+id/txt_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txt_title"
+        android:textColor="#ffffff"
+        android:textColorHint="#9b9898" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_publisher"
+        android:hint="Publisher"
+        android:layout_below="@+id/txt_author"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txt_author"
+        android:textColor="#ffffff"
+        android:textColorHint="#929090" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_desc"
+        android:hint="Description"
+        android:layout_below="@+id/txt_publisher"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txt_publisher"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textColorHint="#747171" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_sp"
+        android:hint="Selling Price"
+        android:layout_below="@+id/txt_desc"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txt_desc"
+        android:textColor="#ffffff"
+        android:textColorHint="#878282" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_rp"
+        android:hint="Rent Price"
+        android:layout_below="@+id/txt_sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/txt_sp"
+        android:textColor="#ffffff"
+        android:textColorHint="#656363" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/txt_rp"
+        android:background="#cac9c9"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/button2"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:textColor="#040000" />
+
+</RelativeLayout>
